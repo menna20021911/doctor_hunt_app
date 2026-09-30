@@ -23,4 +23,5 @@ abstract final class ImageAssets {
   static const String drBalestra = 'assets/images/Dr. Balestra.png';
   static const String drPediatrician = 'assets/images/Dr. Pediatrician.png';
   static const String map = 'assets/images/map.png';
+  static const String google = 'assets/images/google.png';
 }

@@ -7,7 +7,6 @@ import '../../../../generated/style_atom.dart';
 import '../screens/doctor_details_screen.dart';
 import '../widgets/doctor_card_widget.dart';
 
-// نموذج بيانات مؤقت لتمثيل الطبيب
 class DoctorModel {
   final String name;
   final String specialty;

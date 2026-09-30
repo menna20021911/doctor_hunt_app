@@ -19,4 +19,20 @@ abstract final class AppTextStyles {
   static const doctorMeta = TextStyle(fontSize: 9, height: 1.2, color: AppColors.body);
   static const liveBadge = TextStyle(fontSize: 7, fontWeight: FontWeight.w700, color: AppColors.white);
   static const featurePrice = TextStyle(fontSize: 8, color: AppColors.primary);
+  static const slotTime = TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.primary);
+  static const slotTimeSelected = TextStyle(fontSize: 13, fontWeight: FontWeight.w600, color: AppColors.white);
+  static const slotHeader = TextStyle(fontSize: 14, fontWeight: FontWeight.w700, color: AppColors.title);
+  static const emptyStateText = TextStyle(fontSize: 13, fontWeight: FontWeight.w500, color: AppColors.body);
+
+  // Auth screens
+  static const authTitle = TextStyle(fontSize: 26, height: 1.25, fontWeight: FontWeight.w700, color: AppColors.title);
+  static const authSubtitle = TextStyle(fontSize: 13, height: 1.5, color: AppColors.body);
+  static const authField = TextStyle(fontSize: 14, color: AppColors.title);
+  static const authHint = TextStyle(fontSize: 13, color: AppColors.body);
+  static const authLink = TextStyle(fontSize: 13, fontWeight: FontWeight.w500, color: AppColors.primary);
+  static const authSmall = TextStyle(fontSize: 11, color: AppColors.body);
+  static const googleLabel = TextStyle(fontSize: 14, color: AppColors.title);
+  static const sheetTitle = TextStyle(fontSize: 22, fontWeight: FontWeight.w700, color: AppColors.title);
+  static const sheetDesc = TextStyle(fontSize: 12, height: 1.5, color: AppColors.body);
+  static const otpDigit = TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: AppColors.primary);
 }

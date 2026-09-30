@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../chose_role_screen.dart';
+import 'chose_role_screen.dart';
 import '../../../../../generated/image_assets.dart';
 import 'onboarding_page_layout.dart';
 

@@ -1,8 +1,10 @@
+// ignore_for_file: unused_import
 import 'package:flutter/material.dart';
 
 import '../../../../generated/app_colore.dart';
 import '../../../../generated/app_text.dart';
 import '../../../../generated/image_assets.dart';
+import 'select_time_screen.dart';
 
 class DoctorDetailsScreen extends StatelessWidget {
   final String doctorName;
@@ -52,7 +54,6 @@ class DoctorDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-      
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -147,7 +148,14 @@ class DoctorDetailsScreen extends StatelessWidget {
                     width: double.infinity,
                     height: 44,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SelectTimeScreen(),
+                          ),
+                        );
+                      },
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppColors.primary,
                         shape: RoundedRectangleBorder(
@@ -167,10 +175,7 @@ class DoctorDetailsScreen extends StatelessWidget {
                 ],
               ),
             ),
-
             const SizedBox(height: 20),
-
-            
             Container(
               padding: const EdgeInsets.symmetric(vertical: 16),
               decoration: BoxDecoration(
@@ -187,10 +192,7 @@ class DoctorDetailsScreen extends StatelessWidget {
                 ],
               ),
             ),
-
             const SizedBox(height: 24),
-
-            
             const Text(
               AppText.services,
               style: TextStyle(
@@ -211,10 +213,7 @@ class DoctorDetailsScreen extends StatelessWidget {
               number: '3',
               text: AppText.servicePoint3,
             ),
-
             const SizedBox(height: 20),
-
-            
             Container(
               height: 160,
               width: double.infinity,

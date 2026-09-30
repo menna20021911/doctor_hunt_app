@@ -29,4 +29,7 @@ abstract final class AppColors {
   static const eyeCardEnd = Color(0xffffcf68);
   static const heartCardStart = Color(0xffff484c);
   static const heartCardEnd = Color(0xffff6c60);
+  static const slotChipBg = Color(0xffe8f8f3);        
+  static const selectedHeart = Color(0xffff174d);     
+  static const unselectedSlotBg = Color(0xfff5f7f9);
 }

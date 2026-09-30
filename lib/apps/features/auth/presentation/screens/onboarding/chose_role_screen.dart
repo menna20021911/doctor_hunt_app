@@ -1,11 +1,14 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
 
-import '../../../../generated/app_colore.dart';
-import '../../../../generated/app_text.dart';
-import '../../../../generated/image_assets.dart';
-import '../../../../generated/style_atom.dart';
-import '../widgets/role_card_widget.dart';
-import 'Home_screen.dart';
+import '../../../../../generated/app_colore.dart';
+import '../../../../../generated/app_text.dart';
+import '../../../../../generated/image_assets.dart';
+import '../../../../../generated/style_atom.dart';
+import '../../widgets/role_card_widget.dart';
+import '../Home_screen.dart';
+import '../login_screen.dart';
 
 class ChoseRoleScreen extends StatefulWidget {
   const ChoseRoleScreen({super.key, this.onContinue});
@@ -24,10 +27,21 @@ class _ChoseRoleScreenState extends State<ChoseRoleScreen> {
       widget.onContinue!(_selectedRole);
       return;
     }
-    Navigator.of(context).pushReplacement(
-      MaterialPageRoute<void>(builder: (_) => const HomeScreen()),
-    );
+
+    if (_selectedRole == UserRole.patient) {
+      // إذا كان المختار مريض ينقل لـ LoginScreen
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(builder: (_) => const LoginScreen()),
+      );
+    } else if (_selectedRole == UserRole.admin) {
+      // إذا كان المختار أدمن ينقل لـ LoginScreen أيضاً (أو شاشة الأدمن المخصصة)
+      Navigator.of(context).push(
+        MaterialPageRoute<void>(builder: (_) => const LoginScreen()),
+      );
+    }
   }
+  
+  
 
   @override
   Widget build(BuildContext context) => Scaffold(
