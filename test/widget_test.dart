@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_application_1/apps/features/auth/presentation/screens/onboarding/onboarding1_screen.dart';
-import 'package:flutter_application_1/apps/features/auth/presentation/screens/splash/splash_screen.dart';
+import 'package:doctor_hunt/features/auth/presentation/screens/onboarding/onboarding1_screen.dart';
+import 'package:doctor_hunt/features/auth/presentation/screens/splash_screen.dart';
 
 void main() {
   Widget buildTestApp(Widget screen) => MaterialApp(home: screen);
@@ -35,6 +35,6 @@ void main() {
 
     await tester.tap(find.text('Continue'));
     await tester.pumpAndSettle();
-    expect(find.text('Find Your Doctor'), findsOneWidget);
+    expect(find.text('Welcome Back'), findsOneWidget);
   });
 }
